@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>YouTube-Serie: KI im Alltag — Serienplan 3 Wochen</title>
+<style>
+:root{--blau:#1a3a5c;--hellblau:#2563eb;--akzent:#f59e0b;--gruen:#10b981;--rot:#ef4444;--grau:#f1f5f9;--dunkel:#0f172a;--text:#334155;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:#f8fafc;color:var(--text);padding:32px 24px;max-width:1100px;margin:0 auto;}
+.header{background:linear-gradient(135deg,var(--blau) 0%,#0f2d4a 100%);color:white;border-radius:16px;padding:36px 40px;margin-bottom:32px;}
+.header h1{font-size:28px;font-weight:800;margin-bottom:8px;}
+.header-stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px;}
+.stat{background:rgba(255,255,255,0.1);border-radius:10px;padding:10px 18px;text-align:center;}
+.stat-val{font-size:22px;font-weight:800;color:var(--akzent);display:block;}
+.stat-label{font-size:11px;opacity:0.7;}
+h2{font-size:18px;font-weight:700;color:var(--blau);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--akzent);}
+.arch-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:32px;}
+.arch-card{background:white;border-radius:12px;padding:18px 20px;box-shadow:0 2px 10px rgba(0,0,0,0.05);border-top:3px solid var(--blau);}
+.arch-card.akzent-border{border-top-color:var(--akzent);}
+.arch-card.gruen-border{border-top-color:var(--gruen);}
+.arch-title{font-size:14px;font-weight:700;color:var(--dunkel);margin-bottom:6px;}
+.arch-body{font-size:12.5px;color:#64748b;line-height:1.6;}
+.rhythm-bar{background:white;border-radius:12px;padding:20px 24px;margin-bottom:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+.rhythm-item{display:flex;align-items:center;gap:8px;font-size:13px;}
+.dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;}
+.dot.mo{background:var(--hellblau);}.dot.mi{background:var(--gruen);}.dot.fr{background:var(--akzent);}
+.week-block{background:white;border-radius:14px;padding:20px 24px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.05);}
+.week-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.week-num{background:var(--blau);color:white;font-size:13px;font-weight:700;padding:4px 14px;border-radius:20px;}
+.week-title{font-size:15px;font-weight:600;color:var(--dunkel);}
+.week-dates{font-size:12px;color:#94a3b8;margin-left:auto;}
+.days-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.day-card{border-radius:10px;padding:14px 16px;border:1px solid #e2e8f0;}
+.day-card.mo{border-top:3px solid var(--hellblau);}
+.day-card.mi{border-top:3px solid var(--gruen);}
+.day-card.fr{border-top:3px solid var(--akzent);}
+.day-card.highlight{background:#fffbeb;border-color:var(--akzent);}
+.day-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.day-name{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+.day-name.mo{color:var(--hellblau);}.day-name.mi{color:var(--gruen);}.day-name.fr{color:var(--akzent);}
+.folge-num{font-size:10px;font-weight:700;color:#94a3b8;margin-bottom:4px;}
+.folge-title{font-size:13.5px;font-weight:700;color:var(--dunkel);margin-bottom:6px;line-height:1.3;}
+.folge-desc{font-size:12px;color:#64748b;line-height:1.5;}
+.ready-badge{display:inline-block;background:var(--gruen);color:white;font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;}
+.plan-badge{display:inline-block;background:#e2e8f0;color:#64748b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;}
+.footer{text-align:center;font-size:12px;color:#94a3b8;margin-top:40px;padding-top:20px;border-top:1px solid #e2e8f0;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div style="display:inline-block;background:var(--akzent);color:var(--dunkel);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px;">YouTube-Serie · Serienplan</div>
+  <h1>KI im Alltag — Mein echter Workflow<br>mit Claude Cowork</h1>
+  <p style="font-size:15px;opacity:0.75;">Keine Demo-Videos. Echter Arbeitstag. Echte Projekte. Echte Ergebnisse.</p>
+  <div class="header-stats">
+    <div class="stat"><span class="stat-val">9</span><span class="stat-label">Videos · 3 Wochen</span></div>
+    <div class="stat"><span class="stat-val">Mo/Mi/Fr</span><span class="stat-label">Publikationsrhythmus</span></div>
+    <div class="stat"><span class="stat-val">$10–22</span><span class="stat-label">RPM-Schätzung</span></div>
+    <div class="stat"><span class="stat-val">12–14 min</span><span class="stat-label">Ziel-Laufzeit</span></div>
+  </div>
+</div>
+<h2>🏗️ Serienarchitektur</h2>
+<div class="arch-grid">
+  <div class="arch-card"><div class="arch-title">📦 Woche 1 — Setup &amp; Fundament</div><div class="arch-body">LaTeX Workspace, Whisper-Transkription, E-Mail-Labeling. Drei reale Projekte von einem einzigen Tag.</div></div>
+  <div class="arch-card akzent-border"><div class="arch-title">⚙️ Woche 2 — Workflow-Vertiefung</div><div class="arch-body">Metropolsolar-Transkripte, automatische Briefe, Beamer-Präsentationen. KI in spezifischen Berufskontexten.</div></div>
+  <div class="arch-card gruen-border"><div class="arch-title">🔬 Woche 3 — Konzepte &amp; Learnings</div><div class="arch-body">MEMORY-System deep dive, Git für Nicht-Entwickler, Rückblick + Learnings nach 3 Wochen.</div></div>
+</div>
+<h2>🗓️ Publikationsrhythmus</h2>
+<div class="rhythm-bar">
+  <div class="rhythm-item"><div class="dot mo"></div> <strong>Montag</strong> — Praktisch, hands-on, konkreter Workflow</div>
+  <div class="rhythm-item"><div class="dot mi"></div> <strong>Mittwoch</strong> — Vertiefung, Konzept oder Anwendungsfall</div>
+  <div class="rhythm-item"><div class="dot fr"></div> <strong>Freitag</strong> — Analyse, Rückblick oder Wochenreview</div>
+</div>
+<h2>📅 3-Wochen Publikationsplan</h2>
+<!-- Woche 1 -->
+<div class="week-block">
+  <div class="week-header"><span class="week-num">Woche 1</span><span class="week-title">Setup &amp; Fundament</span><span class="week-dates">23.–27. März 2026</span></div>
+  <div class="days-grid">
+    <div class="day-card mo highlight"><div class="day-label"><span class="day-name mo">Montag</span><span style="font-size:12px;color:#94a3b8;">23.03.</span></div><div class="folge-num">FOLGE 01 <span class="ready-badge">✓ bereit</span></div><div class="folge-title">Der KI-Workspace: 13 Vorlagen in unter einer Stunde</div><div class="folge-desc">LaTeX Workspace, MEMORY-System, GitHub-Sync.</div></div>
+    <div class="day-card mi"><div class="day-label"><span class="day-name mi">Mittwoch</span><span style="font-size:12px;color:#94a3b8;">25.03.</span></div><div class="folge-num">FOLGE 02 <span class="ready-badge">✓ bereit</span></div><div class="folge-title">Audio → Text in Minuten: Whisper lokal einrichten</div><div class="folge-desc">Whisper-Modell lokal, Metropolsolar-Videos transkribieren.</div></div>
+    <div class="day-card fr"><div class="day-label"><span class="day-name fr">Freitag</span><span style="font-size:12px;color:#94a3b8;">27.03.</span></div><div class="folge-num">FOLGE 03 <span class="ready-badge">✓ bereit</span></div><div class="folge-title">200 E-Mails mit KI analysieren und labeln</div><div class="folge-desc">Gmail-Klassifikation: 200 E-Mails, KI-Analyse.</div></div>
+  </div>
+</div>
+<!-- Woche 2 -->
+<div class="week-block">
+  <div class="week-header"><span class="week-num">Woche 2</span><span class="week-title">Workflow-Vertiefung</span><span class="week-dates">30. März – 3. April 2026</span></div>
+  <div class="days-grid">
+    <div class="day-card mo"><div class="day-label"><span class="day-name mo">Montag</span><span style="font-size:12px;color:#94a3b8;">30.03.</span></div><div class="folge-num">FOLGE 04 <span class="plan-badge">in Planung</span></div><div class="folge-title">Transkript → Leitfaden: KI in der Bürgersolarberatung</div><div class="folge-desc">Metropolsolar-Schulungen mit Claude aufbereiten.</div></div>
+    <div class="day-card mi"><div class="day-label"><span class="day-name mi">Mittwoch</span><span style="font-size:12px;color:#94a3b8;">01.04.</span></div><div class="folge-num">FOLGE 05 <span class="plan-badge">in Planung</span></div><div class="folge-title">DIN-5008-Brief auf Knopfdruck: LaTeX trifft Claude</div><div class="folge-desc">Geschäftsbrief aus Stichpunkten, vollautomatisch.</div></div>
+    <div class="day-card fr"><div class="day-label"><span class="day-name fr">Freitag</span><span style="font-size:12px;color:#94a3b8;">03.04.</span></div><div class="folge-num">FOLGE 06 <span class="plan-badge">in Planung</span></div><div class="folge-title">Beamer-Präsentation automatisch erzeugen</div><div class="folge-desc">LaTeX-Beamer-Folien, Vorher/Nachher live gezeigt.</div></div>
+  </div>
+</div>
+<!-- Woche 3 -->
+<div class="week-block">
+  <div class="week-header"><span class="week-num">Woche 3</span><span class="week-title">Konzepte &amp; Learnings</span><span class="week-dates">6.–10. April 2026</span></div>
+  <div class="days-grid">
+    <div class="day-card mo"><div class="day-label"><span class="day-name mo">Montag</span><span style="font-size:12px;color:#94a3b8;">06.04.</span></div><div class="folge-num">FOLGE 07 <span class="plan-badge">in Planung</span></div><div class="folge-title">Das MEMORY-System: Dauerhafter Kontext für KI</div><div class="folge-desc">Deep Dive MEMORY.md — Template zum Mitnehmen.</div></div>
+    <div class="day-card mi"><div class="day-label"><span class="day-name mi">Mittwoch</span><span style="font-size:12px;color:#94a3b8;">08.04.</span></div><div class="folge-num">FOLGE 08 <span class="plan-badge">in Planung</span></div><div class="folge-title">Git für Nicht-Entwickler</div><div class="folge-desc">Versionskontrolle + KI für Wissensarbeiter.</div></div>
+    <div class="day-card fr"><div class="day-label"><span class="day-name fr">Freitag</span><span style="font-size:12px;color:#94a3b8;">10.04.</span></div><div class="folge-num">FOLGE 09 <span class="plan-badge">in Planung</span></div><div class="folge-title">3 Wochen KI-Alltag: Was wirklich funktioniert</div><div class="folge-desc">Ehrlicher Rückblick: Zeitersparnis, Grenzen, Learnings.</div></div>
+  </div>
+</div>
+<div class="footer">Erstellt: 19. März 2026 · Dieter Nadolski · Claude Cowork · Serienversion 1.0</div>
+</body>
+</html>
