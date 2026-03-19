@@ -1,0 +1,237 @@
+1
+00:00:00,000 --> 00:00:04,000
+Ich fange jetzt mal mit der ehrlichen Antwort an.
+
+2
+00:00:04,000 --> 00:00:09,000
+Ich bin im Moment freigestellt.
+
+3
+00:00:09,000 --> 00:00:14,000
+Das bedeutet: Ich habe Zeit.
+Drei Jahre, um genau zu sein.
+
+4
+00:00:14,000 --> 00:00:19,000
+Und ich habe mir gedacht --
+wenn nicht jetzt, wann dann?
+
+5
+00:00:19,000 --> 00:00:25,000
+Dieser Kanal ist kein Business-Plan.
+Kein Monetarisierungs-Projekt.
+
+6
+00:00:25,000 --> 00:00:33,000
+Das hier ist meine Antwort auf die Frage:
+Was passiert gerade in der Welt der KI --
+
+7
+00:00:33,000 --> 00:00:39,000
+und was kann ich damit anfangen?
+
+8
+00:00:39,000 --> 00:00:46,000
+Ich will dabei sein. Ich will mitmachen.
+Und ich will zeigen, was dabei rauskommt,
+
+9
+00:00:46,000 --> 00:00:53,000
+wenn jemand KI-Tools ganz normal im Alltag einsetzt --
+ohne grosses Startup dahinter, ohne Marketingteam.
+
+10
+00:00:53,000 --> 00:00:58,000
+Kurz zu mir: Ich bin Dieter --
+
+11
+00:00:58,000 --> 00:01:04,000
+IT-Hintergrund, ein paar Jahrzehnte Berufserfahrung,
+wohnhaft in der Naehe von Koeln.
+
+12
+00:01:04,000 --> 00:01:12,000
+Ich engagiere mich ehrenamtlich bei Metropolsolar:
+Buergersolarberatung.
+
+13
+00:01:12,000 --> 00:01:19,000
+Ich helfe Menschen dabei zu verstehen,
+ob und wie sich eine Solaranlage fuer sie lohnt.
+
+14
+00:01:19,000 --> 00:01:26,000
+Und auch dort faengt KI an, eine Rolle zu spielen --
+dazu kommt noch ein Video.
+
+15
+00:01:26,000 --> 00:01:34,000
+KI ist gerade -- fuer mich jedenfalls --
+das spannendste Thema, das es gibt.
+
+16
+00:01:34,000 --> 00:01:41,000
+Nicht weil alle drueber reden.
+
+17
+00:01:41,000 --> 00:01:48,000
+Sondern weil ich es taeglich ausprobiere
+und merke: das veraendert, wie ich arbeite.
+
+18
+00:01:48,000 --> 00:01:54,000
+Tatsaechlich. Nicht theoretisch.
+
+19
+00:01:55,000 --> 00:02:01,000
+Warum starte ich das jetzt?
+
+20
+00:02:01,000 --> 00:02:08,000
+Ich koennte sagen: weil KI gerade boomt -- aber das ist nicht die ganze Antwort.
+
+21
+00:02:08,000 --> 00:02:15,000
+Die vollstaendige Antwort ist:
+Ich habe gerade drei Jahre Zeit vor mir.
+
+22
+00:02:15,000 --> 00:02:21,000
+Und ich habe die Wahl, diese Zeit zu verbringen --
+oder sie zu nutzen.
+
+23
+00:02:21,000 --> 00:02:29,000
+Ich moechte in dieser Zeit
+meine Praesenz im Netz aufbauen.
+
+24
+00:02:29,000 --> 00:02:36,000
+Nicht als Influencer.
+Nicht als Experte, der vorgibt, alles zu wissen.
+
+25
+00:02:36,000 --> 00:02:45,000
+Sondern als jemand, der oeffentlich lernt,
+ausprobiert, scheitert und weitermacht.
+
+26
+00:02:45,000 --> 00:02:52,000
+KI-Tools, konkret: Claude Cowork,
+begleiten mich dabei.
+
+27
+00:02:52,000 --> 00:03:00,000
+Ich nutze diese Tools taeglich -- fuer echte Aufgaben.
+Dokumente. Transkriptionen. E-Mail-Analysen.
+
+28
+00:03:00,000 --> 00:03:06,000
+Und genau das zeige ich hier.
+
+29
+00:03:06,000 --> 00:03:15,000
+Keinen YouTube-optimierten Demo-Flow.
+Sondern: was passiert, wenn man heute startet,
+
+30
+00:03:15,000 --> 00:03:21,000
+sich ein bisschen Zeit nimmt,
+und schaut, was eine KI wirklich kann.
+
+31
+00:03:22,000 --> 00:03:28,000
+Was erwartet euch auf diesem Kanal?
+
+32
+00:03:28,000 --> 00:03:35,000
+Keine Theorie-Videos.
+Kein KI erklaert in 10 Minuten.
+
+33
+00:03:35,000 --> 00:03:42,000
+Kein Versprechen, dass ihr nach diesem Video
+10x produktiver seid.
+
+34
+00:03:42,000 --> 00:03:50,000
+Stattdessen: echte Projekte. Echte Aufgaben.
+
+35
+00:03:50,000 --> 00:03:58,000
+Heute zum Beispiel habe ich
+einen kompletten Dokument-Workspace aufgebaut --
+
+36
+00:03:58,000 --> 00:04:06,000
+13 Vorlagen, automatisiert, auf zwei Geraeten synchronisiert,
+mit einem System, das der KI dauerhaften Kontext gibt.
+
+37
+00:04:06,000 --> 00:04:11,000
+Dauer: unter einer Stunde.
+
+38
+00:04:11,000 --> 00:04:17,000
+Das zeige ich im naechsten Video, ganz konkret.
+
+39
+00:04:17,000 --> 00:04:25,000
+Alles Alltag. Alles praktisch.
+Alles so gezeigt, dass ihr nachvollziehen koennt:
+
+40
+00:04:25,000 --> 00:04:31,000
+Ist das fuer mich relevant?
+
+41
+00:04:32,000 --> 00:04:38,000
+Zum Schluss noch eins --
+und das meine ich ernst:
+
+42
+00:04:38,000 --> 00:04:44,000
+Ich suche Kontakt.
+
+43
+00:04:44,000 --> 00:04:53,000
+Nicht in dem Sinn, dass ich euch irgendwas verkaufen will.
+Sondern wirklich:
+
+44
+00:04:53,000 --> 00:05:01,000
+Ich will wissen, wer ihr seid, was ihr macht,
+wie ihr KI-Tools einsetzt --
+
+45
+00:05:01,000 --> 00:05:08,000
+oder warum ihr es noch nicht tut.
+
+46
+00:05:08,000 --> 00:05:15,000
+Ich habe dafuer eine eigene E-Mail-Adresse eingerichtet.
+
+47
+00:05:15,000 --> 00:05:23,000
+Kein Newsletter, kein Autoresponder.
+Ihr schreibt mir, ich lese es, ich antworte.
+
+48
+00:05:23,000 --> 00:05:30,000
+Das ist das Versprechen.
+Mal sehen, was sich daraus entwickelt.
+
+49
+00:05:30,000 --> 00:05:40,000
+Und wenn ihr einfach mal schauen wollt,
+was hier passiert -- Abo-Button ist da.
+
+50
+00:05:40,000 --> 00:05:50,000
+Ich fange gerade an. Ihr seid dabei, wenn es passiert.
+Das ist doch eigentlich das Interessanteste.
+
+51
+00:05:50,000 --> 00:05:57,000
+Bis zum naechsten Video --
+da geht's direkt los mit dem ersten richtigen Projekt.
