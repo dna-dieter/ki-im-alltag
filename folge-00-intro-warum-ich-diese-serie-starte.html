@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Folge 00 — Warum ich diese Serie starte · Dieter Nadolski</title>
+<style>
+:root{--blau:#1a3a5c;--hellblau:#2563eb;--akzent:#f59e0b;--gruen:#10b981;--grau-hell:#f8fafc;--grau:#f1f5f9;--dunkel:#0f172a;--text:#334155;--muted:#64748b;--border:#e2e8f0;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:var(--grau-hell);color:var(--text);max-width:900px;margin:0 auto;padding:32px 24px;}
+.header{background:linear-gradient(135deg,var(--blau) 0%,#0f2d4a 100%);color:white;border-radius:16px;padding:36px 40px;margin-bottom:28px;}
+.header h1{font-size:24px;font-weight:800;line-height:1.3;margin-bottom:8px;}
+.episode-tag{display:inline-flex;align-items:center;gap:8px;background:var(--akzent);color:#1a1a00;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:16px;}
+.chip{background:rgba(255,255,255,0.12);border-radius:20px;padding:4px 14px;font-size:12px;}
+.two-col{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start;}
+.script-card{background:white;border-radius:14px;box-shadow:0 2px 14px rgba(0,0,0,0.06);overflow:hidden;}
+.script-topbar{background:var(--dunkel);color:white;padding:12px 20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+.dot-red{width:10px;height:10px;border-radius:50%;background:#ef4444;}
+.dot-yel{width:10px;height:10px;border-radius:50%;background:var(--akzent);}
+.dot-grn{width:10px;height:10px;border-radius:50%;background:var(--gruen);}
+.script-body{padding:28px 32px;}
+.scene{margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--border);}
+.scene:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.scene-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.scene-time{background:var(--blau);color:white;font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;white-space:nowrap;}
+.scene-label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+.scene-title{font-size:15px;font-weight:700;color:var(--dunkel);margin-left:auto;text-align:right;max-width:220px;}
+.regie{background:#1e293b;color:#94a3b8;border-radius:8px;padding:10px 16px;font-size:12px;font-style:italic;margin-bottom:14px;border-left:3px solid var(--akzent);}
+.gesprochen{font-size:15px;line-height:1.85;color:var(--dunkel);}
+.gesprochen p{margin-bottom:14px;}
+.gesprochen p:last-child{margin-bottom:0;}
+.betont{background:#fef9c3;border-radius:3px;padding:1px 4px;font-weight:600;}
+.pause{display:inline-block;color:var(--akzent);font-size:12px;font-weight:700;letter-spacing:1px;margin:0 4px;}
+.cta-box{background:linear-gradient(135deg,var(--blau),#0f2d4a);color:white;border-radius:10px;padding:18px 22px;margin-top:16px;}
+.cta-box p{color:rgba(255,255,255,0.9);font-size:14px;line-height:1.7;}
+.cta-box strong{color:var(--akzent);}
+.sidebar{display:flex;flex-direction:column;gap:16px;}
+.side-card{background:white;border-radius:12px;padding:18px 20px;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+.side-title{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.msg-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.5;}
+.msg-item:last-child{border-bottom:none;}
+.hook-opt{border-left:3px solid var(--border);padding:10px 12px;margin-bottom:10px;border-radius:0 8px 8px 0;font-size:13px;line-height:1.6;font-style:italic;color:var(--dunkel);background:var(--grau);}
+.hook-opt.empfohlen{border-left-color:var(--akzent);background:#fffbeb;}
+.hook-opt .ht{display:block;font-size:10px;font-style:normal;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;color:var(--muted);}
+.hook-opt.empfohlen .ht{color:#b45309;}
+.seo-title{background:var(--grau);border-radius:6px;padding:10px 12px;font-size:13px;font-weight:700;color:var(--dunkel);margin-bottom:8px;border-left:3px solid var(--hellblau);}
+.seo-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:3px;}
+.seo-val{font-size:12.5px;color:var(--dunkel);line-height:1.5;}
+.tag-list{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;}
+.stag{background:#dbeafe;color:#1e40af;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;}
+.footer{margin-top:36px;text-align:center;font-size:12px;color:#94a3b8;padding-top:20px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="episode-tag">📹 Folge 00 · Kanal-Intro</div>
+  <h1>„Warum ich diese Serie starte“<br><span style="opacity:0.7;font-size:18px">— Ehrliche Antwort</span></h1>
+  <p style="font-size:13px;opacity:0.65;margin-bottom:20px;">Geplante Veröffentlichung: Montag, 23. März 2026 &nbsp;·&nbsp; Ziel-Laufzeit: 6–8 Minuten &nbsp;·&nbsp; Format: Talking Head</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;">
+    <span class="chip">🎯 Kanal-Intro</span>
+    <span class="chip">👤 Persönlich &amp; ehrlich</span>
+    <span class="chip">📧 Kontakt-CTA</span>
+    <span class="chip">🤝 Community aufbauen</span>
+  </div>
+</div>
+<div class="two-col">
+<div class="script-card">
+  <div class="script-topbar"><div class="dot-red"></div><div class="dot-yel"></div><div class="dot-grn"></div>&nbsp; Vollständiges Skript — sprechfertig</div>
+  <div class="script-body">
+
+  <div class="scene">
+    <div class="scene-header"><span class="scene-time">0:00 – 0:40</span><span class="scene-label">Hook</span><span class="scene-title">Der ehrliche Einstieg</span></div>
+    <div class="regie">📷 Kamera: Dieter direkt, ruhig, leicht nach vorne. Kein Schreibtisch-Setup — nur die Person.</div>
+    <div class="gesprochen">
+      <p>„Ich fange jetzt mal mit der ehrlichen Antwort an.</p>
+      <p>Ich bin im Moment <span class="betont">freigestellt</span>. <span class="pause">[ kurze Pause ]</span> Das bedeutet: Ich habe Zeit. Drei Jahre, um genau zu sein. Und ich habe mir gedacht — wenn nicht jetzt, wann dann?</p>
+      <p>Dieser Kanal ist kein Business-Plan. Kein Monetarisierungs-Projekt. Das hier ist meine Antwort auf die Frage: <span class="betont">Was passiert gerade in der Welt der KI — und was kann ich damit anfangen?</span></p>
+      <p>Ich will dabei sein. Ich will mitmachen. Und ich will zeigen, was dabei rauskommt, wenn jemand KI-Tools ganz normal im Alltag einsetzt — ohne großes Startup dahinter, ohne Marketingteam.“</p>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header"><span class="scene-time">0:40 – 2:30</span><span class="scene-label">Vorstellung</span><span class="scene-title">Wer ist Dieter?</span></div>
+    <div class="regie">📷 Optional: kurze B-Roll — Schreibtisch, Laptop. Kein Hochglanz.</div>
+    <div class="gesprochen">
+      <p>Kurz zu mir: Ich bin Dieter — IT-Hintergrund, ein paar Jahrzehnte Berufserfahrung, wohnhaft in der Nähe von Köln.</p>
+      <p>Nebenbei engagiere ich mich ehrenamtlich bei <span class="betont">Metropolsolar</span>: Bürgersolarberatung. Und auch dort fängt KI an, eine Rolle zu spielen — dazu kommt noch ein Video.</p>
+      <p><span class="betont">IT-Themen finde ich spannend, seit ich denken kann.</span> Und KI ist gerade — für mich jedenfalls — das spannendste Thema, das es gibt. Nicht weil alle drüber reden. Sondern weil ich es täglich ausprobiere und merke: das verändert, wie ich arbeite. Tatsächlich. Nicht theoretisch.</p>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header"><span class="scene-time">2:30 – 4:30</span><span class="scene-label">Warum jetzt</span><span class="scene-title">Die echte Motivation</span></div>
+    <div class="regie">📷 Ruhig, reflektiert. Keine schnellen Schnitte. Ehrlich wirken — nicht verkauft.</div>
+    <div class="gesprochen">
+      <p>Warum starte ich das jetzt? Ich könnte sagen: „weil KI gerade boomt“ — aber das ist nicht die ganze Antwort.</p>
+      <p>Die vollständige Antwort: Ich habe gerade drei Jahre Zeit vor mir. Und ich habe die Wahl, diese Zeit zu verbringen — oder sie zu nutzen.</p>
+      <p>Ich möchte in dieser Zeit <span class="betont">meine Präsenz im Netz aufbauen</span>. Nicht als Influencer. Sondern als jemand, der öffentlich lernt, ausprobiert, scheitert und weitermacht.</p>
+      <p>KI-Tools, konkret: <span class="betont">Claude Cowork</span>, begleiten mich dabei. Ich nutze diese Tools täglich — für echte Aufgaben. Dokumente. Transkriptionen. E-Mail-Analysen. Solarberatung.</p>
+      <p>Und genau das zeige ich hier. <span class="pause">[ Pause ]</span> Keinen YouTube-optimierten Demo-Flow. Sondern: was passiert, wenn man heute startet und schaut, was eine KI wirklich kann.</p>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header"><span class="scene-time">4:30 – 6:00</span><span class="scene-label">Das Versprechen</span><span class="scene-title">Was euch erwartet</span></div>
+    <div class="regie">📷 Optional: Screencast-Einblick — MEMORY.md, Folderstruktur, git log. 5–10 Sek. Teaser.</div>
+    <div class="gesprochen">
+      <p><span class="betont">Keine Theorie-Videos.</span> Kein „KI erklärt in 10 Minuten“. Kein Versprechen, dass ihr nach diesem Video 10x produktiver seid.</p>
+      <p>Stattdessen: echte Projekte. Heute zum Beispiel habe ich einen kompletten Dokument-Workspace aufgebaut — 13 Vorlagen, automatisiert, auf zwei Geräten synchronisiert, mit einem System, das der KI dauerhaften Kontext gibt. Dauer: unter einer Stunde.</p>
+      <p>Wir schauen uns an, wie man Audioaufnahmen automatisch transkribiert. Wie man 200 E-Mails in einer Stunde analysiert. Wie KI-Tools bei der Solarberatung helfen können.</p>
+      <p>Alles <span class="betont">Alltag</span>. Alles <span class="betont">praktisch</span>. Alles so gezeigt, dass ihr nachvollziehen könnt: Ist das für mich relevant?</p>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header"><span class="scene-time">6:00 – 7:30</span><span class="scene-label">Call to Action</span><span class="scene-title">Die Einladung</span></div>
+    <div class="regie">📷 Persönlich, direkt, ruhig. Keine Hochdruck-CTA — genuine Einladung.</div>
+    <div class="gesprochen">
+      <p>Zum Schluss noch eins — und das meine ich ernst:</p>
+      <p>Ich suche <span class="betont">Kontakt</span>. Nicht in dem Sinn, dass ich euch irgendwas verkaufen will. Sondern wirklich: Ich will wissen, wer ihr seid, was ihr macht, wie ihr KI-Tools einsetzt — oder warum ihr es noch nicht tut.</p>
+      <div class="cta-box">
+        <p>✉️ Schreibt mir gerne direkt:<br><br><strong>[deine-kanal-email@domain.de]</strong><br><br>Kein Newsletter, kein Autoresponder. Ihr schreibt mir, ich lese es, ich antworte. Das ist das Versprechen. <strong>Mal sehen, was sich daraus entwickelt.</strong></p>
+      </div>
+      <p style="margin-top:18px;">Und wenn ihr einfach mal schauen wollt, was hier passiert — Abo-Button ist da. <span class="pause">[ Pause, leichtes Lächeln ]</span> Ich fange gerade an. Ihr seid dabei, wenn es passiert. Das ist doch eigentlich das Interessanteste.</p>
+      <p>Bis zum nächsten Video — da geht's direkt los mit dem ersten richtigen Projekt.</p>
+    </div>
+  </div>
+
+  </div>
+</div>
+<div class="sidebar">
+  <div class="side-card">
+    <div class="side-title">💬 Kernbotschaften</div>
+    <div class="msg-item"><span>🤝</span><span>Ich bin freigestellt — das ist meine Zeit, und ich nutze sie</span></div>
+    <div class="msg-item"><span>⚡</span><span>KI ist das spannendste Thema gerade — ich will dabei sein</span></div>
+    <div class="msg-item"><span>🔍</span><span>Kein Guru — echter Alltag, echte Lernkurve</span></div>
+    <div class="msg-item"><span>🌱</span><span>Mal sehen was sich entwickelt — offen, ohne Versprechen</span></div>
+    <div class="msg-item"><span>✉️</span><span>Persönliche E-Mail-Einladung — echte Antworten</span></div>
+  </div>
+  <div class="side-card">
+    <div class="side-title">🎣 Hook-Varianten</div>
+    <div class="hook-opt empfohlen"><span class="ht">✨ Empfohlen</span>„Ich fange mal mit der ehrlichen Antwort an: Ich bin im Moment freigestellt. Wenn nicht jetzt, wann dann?“</div>
+    <div class="hook-opt"><span class="ht">Frage-Hook</span>„Was würdest du tun, wenn du drei Jahre Zeit hättest?“</div>
+    <div class="hook-opt"><span class="ht">Direkt-Statement</span>„Dieser Kanal ist kein Business-Plan. Das hier ist mein Experiment — öffentlich, ehrlich, in Echtzeit.“</div>
+  </div>
+  <div class="side-card">
+    <div class="side-title">🔍 SEO-Paket</div>
+    <div class="seo-title">„Warum ich diesen KI-Kanal starte — die ehrliche Antwort“</div>
+    <div style="margin-bottom:8px;"><div class="seo-label">Keywords</div><div class="tag-list"><span class="stag">KI im Alltag</span><span class="stag">Claude AI deutsch</span><span class="stag">KI Erfahrungen</span><span class="stag">AI Tools 2026</span></div></div>
+    <div><div class="seo-label">Beschreibungs-Opener</div><div class="seo-val" style="font-style:italic;font-size:12px;">„KI im Alltag — und zwar ehrlich: Ich bin im Moment freigestellt, habe drei Jahre Zeit, und fange an zu dokumentieren, was KI-Tools wie Claude Cowork in der Praxis leisten.“</div></div>
+  </div>
+</div>
+</div>
+<div class="footer">Folge 00 · Skript v1.0 · 19. März 2026 · Dieter Nadolski · Claude Cowork</div>
+</body>
+</html>

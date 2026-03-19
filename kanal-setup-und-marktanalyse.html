@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Kanal-Setup, Marktanalyse &amp; Videolänge · Dieter Nadolski</title>
+<style>
+:root{--blau:#1a3a5c;--hellblau:#2563eb;--akzent:#f59e0b;--gruen:#10b981;--rot:#ef4444;--grau:#f1f5f9;--dunkel:#0f172a;--text:#334155;--muted:#64748b;--border:#e2e8f0;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#f8fafc;color:var(--text);max-width:1080px;margin:0 auto;padding:32px 24px;}
+.page-header{background:linear-gradient(135deg,var(--dunkel),#1e293b);color:white;border-radius:16px;padding:32px 36px;margin-bottom:28px;}
+.page-header h1{font-size:22px;font-weight:800;margin-bottom:6px;}
+.section{margin-bottom:32px;}
+.section-title{font-size:17px;font-weight:800;color:var(--blau);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--akzent);}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+.card{background:white;border-radius:12px;padding:20px 22px;box-shadow:0 2px 12px rgba(0,0,0,0.05);border-top:3px solid var(--border);}
+.card.blau{border-top-color:var(--blau);}.card.akzent{border-top-color:var(--akzent);}.card.gruen{border-top-color:var(--gruen);}
+.card-title{font-size:14px;font-weight:700;color:var(--dunkel);margin-bottom:8px;}
+.card-body{font-size:13px;color:var(--text);line-height:1.65;}
+.name-option{background:white;border-radius:12px;border:2px solid var(--border);padding:18px 22px;margin-bottom:12px;position:relative;}
+.name-option.top{border-color:var(--akzent);background:#fffbeb;}
+.name-badge{position:absolute;top:14px;right:14px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:10px;}
+.badge-top{background:var(--akzent);color:#1a1200;}.badge-gut{background:#dbeafe;color:#1e40af;}
+.name-main{font-size:19px;font-weight:800;color:var(--dunkel);margin-bottom:4px;}
+.name-url{font-size:12px;color:var(--hellblau);font-family:monospace;margin-bottom:8px;}
+.name-pros{font-size:12.5px;color:var(--muted);line-height:1.6;}
+.pro{color:var(--gruen);font-weight:700;margin-right:4px;}.con{color:var(--rot);font-weight:700;margin-right:4px;}
+.empfehlung{background:linear-gradient(135deg,#064e3b,#065f46);color:white;border-radius:14px;padding:22px 26px;margin-bottom:16px;}
+.empfehlung h3{font-size:15px;font-weight:800;margin-bottom:12px;}
+.emp-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:13.5px;}
+.emp-row:last-child{border-bottom:none;}
+.emp-tag{background:var(--akzent);color:#1a1200;font-size:11px;font-weight:700;padding:2px 10px;border-radius:10px;white-space:nowrap;}
+.emp-text{color:rgba(255,255,255,0.9);}
+.format-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
+.format-card{border-radius:12px;padding:18px 20px;border:2px solid var(--border);}
+.format-card.preferred{border-color:var(--gruen);background:#f0fdf4;}
+.format-title{font-size:14px;font-weight:700;color:var(--dunkel);margin-bottom:10px;}
+.format-list li{font-size:12.5px;margin-bottom:5px;list-style:none;padding-left:16px;position:relative;line-height:1.5;}
+.format-list li::before{content:'→';position:absolute;left:0;color:var(--gruen);font-weight:700;}
+.upload-step{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.upload-step:last-child{border-bottom:none;}
+.step-num{width:32px;height:32px;background:var(--blau);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0;}
+.step-title{font-size:14px;font-weight:700;color:var(--dunkel);margin-bottom:4px;}
+.step-desc{font-size:12.5px;color:var(--muted);line-height:1.6;}
+.markt-karte{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05);margin-bottom:14px;}
+.mk-header{padding:12px 18px;font-size:13px;font-weight:700;color:white;}
+.mk-header.blau{background:var(--blau);}.mk-header.gruen{background:var(--gruen);}.mk-header.akzent{background:#d97706;}.mk-header.lila{background:#7c3aed;}
+.mk-body{padding:16px 18px;}
+.mk-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.mk-row:last-child{border-bottom:none;}
+.mk-label{color:var(--muted);}.mk-val{font-weight:700;color:var(--dunkel);}.mk-val.gruen{color:var(--gruen);}.mk-val.rot{color:var(--rot);}
+.position-box{background:linear-gradient(135deg,var(--blau),#0f2d4a);color:white;border-radius:14px;padding:24px 28px;}
+.position-box h3{font-size:16px;font-weight:800;color:var(--akzent);margin-bottom:16px;}
+.pos-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.pos-item:last-child{border-bottom:none;}
+.pos-text{font-size:13.5px;color:rgba(255,255,255,0.9);line-height:1.6;}
+.pos-text strong{color:var(--akzent);}
+.footer{margin-top:36px;text-align:center;font-size:12px;color:#94a3b8;padding-top:20px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <h1>Kanal-Setup, Marktanalyse &amp; Videolänge</h1>
+  <p style="font-size:13px;opacity:0.6;">Alle offenen Fragen auf einen Blick · Stand 19. März 2026</p>
+</div>
+<div class="section">
+  <div class="section-title">📏 Empfohlene Videolänge</div>
+  <div class="empfehlung">
+    <h3>✅ Konkrete Empfehlung für die ersten 9 Videos</h3>
+    <div class="emp-row"><span class="emp-tag">Folge 00 · Intro</span><span class="emp-text"><strong>5–7 Minuten</strong> — Persönliches Vorstellungsvideo. Kürze ist Stärke. Vertrauensaufbau.</span></div>
+    <div class="emp-row"><span class="emp-tag">Folge 01–06 · Workflows</span><span class="emp-text"><strong>10–12 Minuten</strong> — Mid-Roll ab 8 min. Lieber 11 gute als 14 gestreckte Minuten.</span></div>
+    <div class="emp-row"><span class="emp-tag">Folge 07–08 · Deep Dive</span><span class="emp-text"><strong>12–15 Minuten</strong> — Erst wenn Retention-Daten aus ersten Videos bekannt sind.</span></div>
+    <div class="emp-row"><span class="emp-tag">Folge 09 · Rückblick</span><span class="emp-text"><strong>8–10 Minuten</strong> — Straffes Format ist hier ein Feature.</span></div>
+  </div>
+  <div class="card akzent"><div class="card-title">⚠️ Wichtig: Länge folgt Inhalt</div><div class="card-body">Niemals ein Video auf 10 Minuten aufblasen. YouTube misst Retention — 8 Minuten mit 75% Retention schlagen 12 Minuten mit 40% jedes Mal.</div></div>
+</div>
+<div class="section">
+  <div class="section-title">📺 Kanalname — Empfehlungen</div>
+  <div class="name-option top"><div class="name-badge badge-top">⭐ Top-Empfehlung</div><div class="name-main">KI im Alltag</div><div class="name-url">youtube.com/@kiimalltag</div><div class="name-pros"><span class="pro">+</span>Exaktes Keyword<br><span class="pro">+</span>Zeitlos, nicht an ein Jahr gebunden<br><span class="pro">+</span>Kurz, merkfähig<br><span class="con">−</span>Kein persönlicher Name (passt aber zum Faceless-Konzept)</div></div>
+  <div class="name-option"><div class="name-badge badge-gut">gut</div><div class="name-main">Dieter &amp; KI</div><div class="name-url">youtube.com/@dieterundki</div><div class="name-pros"><span class="pro">+</span>Persönlich, authentisch<br><span class="con">−</span>Weniger suchbar</div></div>
+  <div class="card blau" style="margin-top:8px;"><div class="card-title">💡 Mein Rat: „KI im Alltag“</div><div class="card-body">Zuerst prüfen ob der YouTube-Handle @kiimalltag noch frei ist.</div></div>
+</div>
+<div class="section">
+  <div class="section-title">🎭 Faceless-Format</div>
+  <div class="format-compare">
+    <div class="format-card preferred"><div class="format-title">✓ Screencast + Voiceover (empfohlen)</div><ul class="format-list"><li>Kamera läuft nicht — du zeigst deinen Bildschirm</li><li>Perfekt für Workflow-Videos (LaTeX, Terminal, Claude)</li><li>Kein Kamera-Setup nötig</li></ul></div>
+    <div class="format-card"><div class="format-title">Talking Head (nur wo nötig)</div><ul class="format-list"><li>Gesicht nur für Folge 00 und Rückblicke</li><li>Schafft Vertrauen</li></ul></div>
+  </div>
+  <div class="grid-3">
+    <div class="card gruen"><div class="card-title">🎤 Mikrofon</div><div class="card-body">Wichtiger als Kamera. Blue Yeti, Rode NT-USB oder gutes Headset.</div></div>
+    <div class="card akzent"><div class="card-title">🖥️ Screen-Recording</div><div class="card-body">OBS Studio (kostenlos). 1920×1080, 60fps wenn möglich.</div></div>
+    <div class="card blau"><div class="card-title">✂️ Schnitt</div><div class="card-body">iMovie (kostenlos, Mac) reicht. DaVinci Resolve für mehr Kontrolle.</div></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">⬆️ Erster Upload — Schritt für Schritt</div>
+  <div class="card">
+    <div class="upload-step"><div class="step-num">1</div><div><div class="step-title">YouTube-Konto einrichten</div><div class="step-desc">Mit dieter.nadolski@gmail.com anmelden → Kanal erstellen → Handle reservieren. Banner: 2560×1440px (Canva-Template).</div></div></div>
+    <div class="upload-step"><div class="step-num">2</div><div><div class="step-title">Video aufnehmen &amp; schneiden</div><div class="step-desc">Folge 00: 5–7 Minuten Kamera + Screencast-Teaser. iMovie oder DaVinci Resolve.</div></div></div>
+    <div class="upload-step"><div class="step-num">3</div><div><div class="step-title">Thumbnail erstellen</div><div class="step-desc">Canva → 1280×720px. Hochkontrast. Bei 120px Breite lesbar?</div></div></div>
+    <div class="upload-step"><div class="step-num">4</div><div><div class="step-title">Upload in YouTube Studio</div><div class="step-desc">Titel (Keyword-first!) → Beschreibung → Thumbnail → Zeitmarken → Tags → Kategorie: Wissenschaft &amp; Technik.</div></div></div>
+    <div class="upload-step"><div class="step-num">5</div><div><div class="step-title">E-Mail in Beschreibung</div><div class="step-desc">Kanal-E-Mail prominent in Beschreibung und Kanal-Info-Bereich. Nicht verstecken!</div></div></div>
+    <div class="upload-step"><div class="step-num">6</div><div><div class="step-title">Veröffentlichung planen</div><div class="step-desc">"Geplant" statt "Sofort" → Montag 23. März, 09:00 Uhr. Erste 48 Stunden zählen für Algorithmus-Ersteindruck.</div></div></div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">📊 Marktanalyse — Deutsche KI-YouTube-Landschaft 2026</div>
+  <div class="grid-2" style="margin-bottom:20px;">
+    <div class="markt-karte"><div class="mk-header blau">📈 Marktgröße &amp; Creator-Dichte</div><div class="mk-body"><div class="mk-row"><span class="mk-label">DE YouTube-Nutzer</span><span class="mk-val">67+ Millionen</span></div><div class="mk-row"><span class="mk-label">KI-Creator DE aktiv</span><span class="mk-val rot">sehr wenige (&lt; 50)</span></div><div class="mk-row"><span class="mk-label">Markt-Status</span><span class="mk-val gruen">early, nicht gesättigt</span></div><div class="mk-row"><span class="mk-label">CPM DE</span><span class="mk-val gruen">€9–15 / 1.000 Views</span></div></div></div>
+    <div class="markt-karte"><div class="mk-header akzent">🎬 Content-Typen</div><div class="mk-body"><div class="mk-row"><span class="mk-label">Demo-Videos &amp; Tutorials</span><span class="mk-val">45–50 %</span></div><div class="mk-row"><span class="mk-label">Erklärvideo / Theorie</span><span class="mk-val">30–35 %</span></div><div class="mk-row"><span class="mk-label">Echte Alltags-Workflows</span><span class="mk-val gruen">&lt; 5 % ← Deine Nische!</span></div><div class="mk-row"><span class="mk-label">Langzeit-Case-Studies</span><span class="mk-val gruen">nahezu 0 % ← Lücke!</span></div></div></div>
+  </div>
+  <div class="position-box">
+    <h3>🎯 Deine Markt-Position</h3>
+    <div class="pos-item"><span>⏳</span><div class="pos-text"><strong>Langzeit-Authentizität:</strong> 3 Jahre dokumentierter Alltag ist etwas, das kein Unternehmens-Kanal replizieren kann.</div></div>
+    <div class="pos-item"><span>🚫</span><div class="pos-text"><strong>Keine Interessenkonflikte:</strong> Du verkaufst nichts, bewirbst keine Tools. In diesem Markt extrem selten.</div></div>
+    <div class="pos-item"><span>👥</span><div class="pos-text"><strong>Zielgruppe = Du selbst:</strong> Du bist kein 25-jähriger Technik-Enthusiast. Du sprichst direkt als Peer.</div></div>
+    <div class="pos-item"><span>🔧</span><div class="pos-text"><strong>Echter Workflow, echter Commit-Verlauf:</strong> Der git log von heute ist Content. Das ist lebendige Dokumentation.</div></div>
+  </div>
+</div>
+<div class="footer">Kanal-Setup &amp; Marktanalyse · Stand 19. März 2026 · Dieter Nadolski · Claude Cowork</div>
+</body>
+</html>
